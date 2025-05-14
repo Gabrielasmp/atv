@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+  }
+   
+  .container {
+    background: #f3f4f6;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    height: 800px;
+  }
+   
+  .perfil {
+    display: flex;
+    gap: 20px;
+  }
+   
+  .perfil img {
+    height: 120px;
+    border-radius: 50%;
+  }
+   
+  .info h1 {
+    font-size: 24px;
+  }
+   
+  .info h2,
+  .info p {
+    font-size: 14px;
+    color: #555;
+  }
+   
+  .links a {
+    margin-right: 5px;
+    color: #0073b1;
+    text-decoration: none;
+  }
+   
+  .box {
+    height: 700px;
+    width: 100;
+    border-radius: 5px;
+  }
+   
+  .box ul {
+    padding-left: 20px;
+    margin: 0;
+    list-style-type: none;
+  }
+   
+  .box {
+    background: #f3f4f6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }
+   
+  .box,
+  .projetos {
+    margin-top: 50px;
+  }
+   
+  .box,
+  .projetos,
+  .ul {
+    list-style-type: none;
+  }
+   
+  .box,
+  h3 {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+   
+   
+  @media (max-width: 800px) {
+    .container {
+      justify-content: center;
+      width: 400px;
+      height: 100%;
+    }
+   
+    .info {
+      justify-content: space-around;
+    }
+   
+    .perfil {
+      display: flex;
+      flex-direction: column; /* Isso coloca a imagem em cima do texto */
+      align-items: center; /* Para centralizar a imagem e o texto */
+    }
+   
+    .perfil img {
+      height: 100px;
+      margin-bottom: 10px; /* Adiciona um pequeno espaço entre a imagem e o texto */
+    }
+   
+    .info h1 {
+      font-size: 15px;
+    }
+   
+    .info h2 {
+      font-size: 12px;
+    }
+   
+    .info h2,
+    .info p {
+      font-size: 15px;
+    }
+   
+    .box {
+      height: 600px;
+      width: 250px;
+      justify-content: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+   
+    .box ul li {
+      font-size: 15px;
+    }
+  }
+   

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Gruppo&family=Noto+Naskh+Arabic:wght@400..700&display=swap');
+
+body{
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+p{
+    font-size: 26px; /*tamanho da fonte*/
+    text-align: center;/* centraliza o texto*/
+    font-weight: bold;
+    border: solid rgb(92, 173, 153) 5px;
+    padding: 20px 10px 5px 100px;
+    margin: 70px 20px 40px 10px
+
+
+}
+

@@ -1,0 +1,35 @@
+p {
+    background-color: #1f7a8c
+}
+ 
+div {
+    border: #1f7a8c 5px outset;
+}
+.texto{
+
+    font-size: 50px;
+    text-align: center;
+}
+
+
+section p{
+background-color: #1f7a8c;
+
+}
+
+#cabecalho {
+    background-color: rgb(17, 189, 189);
+    font-size: 100px;
+    width: 500px;
+    height: 450px;
+}
+
+
+
+
+
+
+
+
+
+
