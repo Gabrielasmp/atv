@@ -7,7 +7,7 @@ function mostrarValores() {
     Seu filme favorito é  ${t1}
     Você ama ouvir ${t2}
     Seu jogo favorito é ${t3}
-    `;
+    `
  
     document.querySelector('#resultado').innerHTML = resultado;
   }
