@@ -1,5 +1,5 @@
 function converter() {
-    const cotacao = 5.00; 
+    const cotacao = 5.69; 
     const valorDolar = parseFloat(document.getElementById("dolar").value);
 
     if (!isNaN(valorDolar)) {
