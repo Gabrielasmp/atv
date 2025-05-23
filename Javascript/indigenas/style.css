@@ -1,0 +1,162 @@
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(241, 241, 202);
+    /* amarelo claro */
+    color: #4B3B0B;
+    /* marrom escuro */
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #FFB956;
+    /* laranja forte */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #FB923C;
+    /* laranja vibrante */
+  }
+
+  .banner {
+    background-image: url(images/1f61400ee324fb0eafe3934fef803fbc.jpg);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px #4B3B0B;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .banner h2 {
+    font-size: 2.8rem;
+    max-width: 700px;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+
+  section h3 {
+    color: #FFB956;
+    /* laranja escuro */
+    margin-bottom: 15px;
+    border-bottom: 3px solid #FFE88C;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  /* Ajuste tribos para imagem à esquerda e texto à direita */
+  .p1 {
+    display: flex;
+  }
+  
+  .p img{
+    width: 500px;
+  }
+
+  .p2 img{
+    justify-content: space-between;
+
+  }
+  .textos{
+    width: 500px;
+    padding: 20px;
+  }
+  .tribo-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(248, 240, 169, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .tribo-card img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .tribo-card div {
+    flex: 1;
+  }
+
+  .tribo-card h4 {
+    margin-bottom: 8px;
+    color: #bd542a;
+  }
+
+  footer {
+    background-color: #7a6556;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+  }
+
+  
+
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .tribos {
+      flex-direction: column;
+    }
+
+    .tribo-card {
+      flex-direction: column;
+    }
+
+    .tribo-card img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+  }
