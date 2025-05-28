@@ -1,0 +1,333 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #000000;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+/* Header */
+header {
+    background-color: #ff8a04;
+    border-bottom: 1px solid #eaeaea;
+    padding: 30px 60px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu nav ul,
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+nav a:hover {
+    color: #fffffe;
+}
+
+nav a.active {
+    color: white;
+}
+
+/* Introdução */
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 60px;
+    border-radius: 15px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+.intro-text h2 .laranja {
+    color: #fb8500;
+}
+
+.intro-text p,
+.text {
+    font-size: 22px;
+    color: #000;
+}
+
+/* Imagens */
+.intro-img,
+.img-central,
+.regiao {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro-img {
+    margin-top: 110px;
+}
+
+.intro-img img,
+.img-central img,
+.regiao img {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título central */
+.titulo-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 30px 0;
+}
+
+.titulo-central h1 {
+    font-size: 48px;
+    color: #fb8500;
+    text-align: center;
+}
+
+/* Footer simples */
+.simple-footer {
+    background-color: #ff8a04;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+/* Alerta */
+.alerta {
+    background-color: #000000;
+    color: white;
+    padding: 40px 30px;
+    max-width: 700px;
+    margin: 80px auto;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alerta h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.alerta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-alerta {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #fffdfd;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.btn-alerta:hover {
+    background-color: #000;
+}
+
+/* Media Query para telas menores que 800px */
+@media (max-width: 800px) {
+ 
+    body {
+        /* Remover margens e padding extras, mas manter a fonte legível */
+        margin: 0;
+        padding: 0;
+        font-size: 14px; /* Ajustado para melhor leitura */
+    }
+ 
+    .image-text,
+    .image-text.reverse {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+ 
+    .image-text img {
+        width: 20%;
+        max-width: 300px;
+    }
+ 
+    .image-text .text {
+        text-align: left;
+        padding: 0 10px;
+        font-size: 12px; /* Ajustado para legibilidade */
+    }
+ 
+    .image-text .text h2 {
+        font-size: 24px;
+    }
+ 
+    .image-text .text p {
+        font-size: 16px;
+    }
+ 
+    h1 {
+        font-size: 24px;
+        padding: 20px 10px;
+    }
+ 
+    .intro-text h2 {
+        font-size: 30px;
+    }
+ 
+    header {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+ 
+    .logo {
+        display: none;
+    }
+ 
+    .menu nav ul {
+        flex-direction: column; /* muda para coluna */
+        gap: 10px;
+        width: 100%;
+        padding-left: 0; /* garantir que lista fique alinhada */
+    }
+ 
+    .menu nav ul li {
+        width: 100%;
+        margin: 0; /* remover margens extras */
+    }
+ 
+    .menu nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 18px;
+        text-align: center;
+    }
+ 
+    .menu {
+        flex-direction: column; /* o container também */
+        align-items: flex-start;
+        gap: 15px;
+    }
+ 
+    .btn-cadastro {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+ 
+    .intro {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+ 
+    .intro-img {
+        height: 50px;
+        padding: 0;
+    }
+ 
+    .titulo-central h1 {
+        font-size: 30px;
+        padding: 0;
+        margin: 100px 0 0 0; /* Ajuste o valor conforme a necessidade */
+    }
+    @media (max-width: 800px) {
+        /* Outras regras... */
+    
+        /* Ajuste para as imagens dentro de intro-img, img-central, regiao */
+        .intro-img,
+        .img-central,
+        .regiao {
+            max-width: 100%;
+            width: 100%;
+            height: auto; /* Para manter proporção */
+            padding: 0; /* Remover padding se houver */
+            margin: 0 auto; /* Centralizar */
+        }
+    
+        .intro-img img,
+        .img-central img,
+        .regiao img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            object-fit: contain; /* Mantém a imagem inteira dentro do espaço */
+        }
+    
+        /* Para imagens dentro de .image-text */
+        .image-text img {
+            width: 40%; /* aumenta para melhorar visibilidade */
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    /* Remover o reset universal aqui para evitar conflito */
+    /* * {
+        margin: 15px;
+    } */
+}
